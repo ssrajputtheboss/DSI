@@ -1,6 +1,4 @@
-package org.example;
-
-import org.example.Item;
+package Kotlin;
 
 fun main(){
     println("Hello World!!");
