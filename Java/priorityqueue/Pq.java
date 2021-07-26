@@ -9,6 +9,7 @@ import Java.Item;
 
 class ItemComparatorById implements Comparator<Item>{
 
+    //Max Priority Queue
     @Override
     public int compare(Item o1, Item o2) {
         return o1.getId().compareTo(o2.getId());
@@ -17,7 +18,8 @@ class ItemComparatorById implements Comparator<Item>{
 }
 
 class ItemComparatorByManufactureTime implements Comparator<Item>{
-
+    
+    //Min Priority Queue
     @Override
     public int compare(Item o1, Item o2) {
         return o1.getManufactureTime().compareTo(o2.getManufactureTime());
