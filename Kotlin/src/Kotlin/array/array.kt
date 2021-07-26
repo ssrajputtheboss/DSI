@@ -10,7 +10,7 @@ fun main(){
 		Item(1,"Item1",LocalDateTime.of(2029,4,3,12,23,43))
 	)
 	
-	items.forEach{it -> print(it)}
+	items.forEach{print(it)}
 	println()
 }
 
