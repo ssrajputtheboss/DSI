@@ -36,7 +36,7 @@ public class QueueApp {
         initialize();
         System.out.println("Initially");
         show();
-        queueItems.remove();
+        queueItems.poll();//pops and return the first element
         System.out.println("After remove now top = "+ queueItems.peek());
         show();
     }
