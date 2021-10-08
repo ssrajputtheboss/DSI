@@ -79,6 +79,10 @@ int main(int argc, char const *argv[])
         {"Item4",item(4,"Mobile")},
         {"Item2",item(1,"Calculator")}
         });
+    /*
+    unorderd_map -> hashmap in java elements are in random order
+    ordered_map -> Treemap in java elements are always in sorted order
+    */
     cout<<"Initially";
     show(items);
     sort_by_id(items);

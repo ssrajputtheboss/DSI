@@ -50,7 +50,7 @@ public class Pq{
         items.add(new Item(4, "Laptop" , LocalDateTime.of(2019, 2, 20, 1, 10, 0)));
         items.add(new Item(5, "Laptop" , LocalDateTime.of(2018, 2, 12, 3, 4, 5)));
         items.add(new Item(2, "Laptop" , LocalDateTime.of(2021, 1, 22, 9, 7, 6)));
-        pQueueId = new PriorityQueue<>((i1,i2)->i1.getId().compareTo(i2.getId()));
+        pQueueId = new PriorityQueue<>((i1,i2)->i1.getId().compareTo(i2.getId())); // by default java creates a min heap
         pQueueMt = new PriorityQueue<>((i1,i2)->i1.getManufactureTime().compareTo(i2.getManufactureTime())); // we can also use interface here
         pQueueId.addAll(items);
         pQueueMt.addAll(items);
